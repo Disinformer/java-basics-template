@@ -33,10 +33,7 @@ public class SimpleMathService implements MathService {
      */
     @Override
     public int maxFrom(int[] values) {
-        int[] sortedArray = new int[values.length];
-        System.arraycopy(values, 0, sortedArray, 0, values.length);
-        Arrays.sort(values);
-        return sortedArray[sortedArray.length - 1];
+        return sort(values)[values.length - 1];
     }
 
     /**
